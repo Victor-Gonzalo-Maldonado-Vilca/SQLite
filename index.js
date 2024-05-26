@@ -8,6 +8,7 @@ app.use(express.static('pub'));
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 
+//Abriendo un servidor
 app.listen(3000, () => {
 	console.log("Escuchando en: http://localhost:3000")
 
@@ -16,6 +17,7 @@ app.listen(3000, () => {
 app.get('/', (request, response) => {
 	response.sendFile(path.resolve(__dirname, 'index.html'));
 });
+//Conectar a la base de datos
 const conexion = mysql.createConnection({
   host: 'localhost',
   port: 3306,
@@ -35,11 +37,13 @@ conexion.connect((err) => {
   app.post('/basedata',(request, response) => {
     const fecha = request.body.year;
     console.log(fecha);
+    //consulta sql
     conexion.query('SELECT * FROM movie WHERE Year = ?',[fecha],(err,filas) => {
       if (err) {
         console.error('Error en la consulta')
         response.status(500).json({error: 'Error en la consulta'});
       } else {
+        //Respuesta del servidor
         console.log('Consulta realizada')
         response.json(filas);
       }
