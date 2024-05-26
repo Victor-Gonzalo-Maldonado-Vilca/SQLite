@@ -5,7 +5,7 @@ const mysql = require('mysql')
 const app = express();
 
 app.use(express.static('pub'));
-app.use(bp.json);
+app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 
 app.listen(3000, () => {
