@@ -28,6 +28,17 @@ function movies(fecha){
           filaE.appendChild(th);
         }
       }
+      
+      const cuerpoTabla = tabla.createTBody();
+      datos.forEach(dato => {
+        const fila = cuerpoTabla.insertRow();
+        for (const key in dato){
+          if(key != 'id' && key != 'Year'){
+            const td = fila.insertCell();
+            td.texContent = dato[key];
+          }
+        }
+      })
       contenedorTabla.appendChild(tabla);
     })
 }
