@@ -33,7 +33,8 @@ conexion.connect((err) => {
   }
   
   app.get('/basedata',(request, response) => {
-    conexion.query('SELECT * FROM movie',(err,filas) => {
+    const fecha = request.body.year;
+    conexion.query('SELECT * FROM movie WHERE Year == fecha',(err,filas) => {
       if (err) {
         console.error('Error en la consulta')
         response.status(500).json({error: 'Error en la consulta'});
