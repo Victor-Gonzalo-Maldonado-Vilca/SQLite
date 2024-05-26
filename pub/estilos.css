@@ -1,10 +1,10 @@
-#tablePeliculas{
+.tablePeliculas{
   text-align: center;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-#tablePeliculas td, #tablePeliculas th{
+.tablePeliculas td, .tablePeliculas th{
   border: 1px solid black;
 }
 
@@ -20,6 +20,7 @@ label {
   border-radius: 10px;
   border: 1px solid black;
   padding-left: 10px;
+  width: 225px;
 }
 
 #submit {

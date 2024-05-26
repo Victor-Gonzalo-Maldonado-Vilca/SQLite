@@ -12,7 +12,7 @@
       <h1>Tabla de Películas</h1>
       <form id="formulario">
         <label for="year">Ingrese Año:</label>
-        <input type="number" placeholder="Ingrese un año" id="year" name="year"/>
+        <input type="number" placeholder="Año superior a 1899 e inferior 2025" id="year" name="year" min="1900" max="2024"/>
         <input type="submit" value="Generar" id="submit"/>
       </form>
       <div id="table"></div>

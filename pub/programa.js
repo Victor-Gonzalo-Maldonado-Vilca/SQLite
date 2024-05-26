@@ -17,30 +17,36 @@ function movies(fecha){
     .then(datos => {
       console.log(datos);
       const contenedorTabla = document.querySelector('#table');
-      const tabla = document.createElement('table');
-      tabla.id = 'tablePeliculas';
-      const encabezado = tabla.createTHead();
-      const filaE = tabla.insertRow();
       
-      for (const key in datos[0]){
-        if(key != 'id' && key != 'Year'){
-          const th = document.createElement('th');
-          th.textContent = key.toUpperCase();
-          filaE.appendChild(th);
-        }
-      }
+      if (datos.length > 0) {
+        const tabla = document.createElement('table');
+        tabla.classList = 'tablePeliculas';
+        const encabezado = tabla.createTHead();
+        const filaE = tabla.insertRow();
       
-      const cuerpoTabla = tabla.createTBody();
-      datos.forEach(dato => {
-        const fila = cuerpoTabla.insertRow();
-        for (const key in dato){
+        for (const key in datos[0]){
           if(key != 'id' && key != 'Year'){
-            const td = fila.insertCell();
-            td.textContent = dato[key];
+            const th = document.createElement('th');
+            th.textContent = key.toUpperCase();
+            filaE.appendChild(th);
           }
         }
-      })
-      contenedorTabla.appendChild(tabla);
+        
+        const cuerpoTabla = tabla.createTBody();
+        datos.forEach(dato => {
+          const fila = cuerpoTabla.insertRow();
+          for (const key in dato){
+            if(key != 'id' && key != 'Year'){
+              const td = fila.insertCell();
+              td.textContent = dato[key];
+            }
+          }
+        })
+        contenedorTabla.appendChild(tabla);
+      } else {
+        contenedorTabla.textContent = 'No hay Películas que mostrar';
+        tabla.classList = 'tablePeliculas';
+      }
     })
 }
 
