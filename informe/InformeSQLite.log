@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.23)  26 MAY 2024 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.23)  26 MAY 2024 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Plantilla.tex
-(Plantilla.tex
+**./InformeSQLite.tex
+(InformeSQLite.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -651,13 +651,9 @@ dftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count323
 \l__pdf_internal_box=\box111
-) (Plantilla.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
-LaTeX Info: Redefining \. on input line 13.
-LaTeX Info: Redefining \% on input line 13.
 )
-\openout1 = `Plantilla.aux'.
+No file InformeSQLite.aux.
+\openout1 = `InformeSQLite.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
 LaTeX Font Info:    ... okay on input line 141.
@@ -677,7 +673,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
 LaTeX Font Info:    ... okay on input line 141.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
 LaTeX Font Info:    ... okay on input line 141.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -739,9 +734,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 141.
- (Plantilla.out) (Plantilla.out)
 \@outlinefile=\write4
-\openout4 = `Plantilla.out'.
+\openout4 = `InformeSQLite.out'.
 
 
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.s
@@ -785,12 +779,12 @@ Overfull \hbox (0.89597pt too wide) in paragraph at lines 185--193
 [][] 
  []
 
-<img/logo_episunsa.png, id=170, 195.73125pt x 58.2175pt>
+<img/logo_episunsa.png, id=6, 195.73125pt x 58.2175pt>
 File: img/logo_episunsa.png Graphic file (type png)
 <use img/logo_episunsa.png>
 Package pdftex.def Info: img/logo_episunsa.png  used on input line 211.
 (pdftex.def)             Requested size: 85.35826pt x 25.38835pt.
-<img/logo_abet.png, id=171, 58.2175pt x 65.24374pt>
+<img/logo_abet.png, id=7, 58.2175pt x 65.24374pt>
 File: img/logo_abet.png Graphic file (type png)
 <use img/logo_abet.png>
 Package pdftex.def Info: img/logo_abet.png  used on input line 211.
@@ -844,12 +838,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
 [3]
-<img/puertos.png, id=209, 498.663pt x 320.99925pt>
+<img/puertos.png, id=63, 498.663pt x 320.99925pt>
 File: img/puertos.png Graphic file (type png)
 <use img/puertos.png>
 Package pdftex.def Info: img/puertos.png  used on input line 333.
 (pdftex.def)             Requested size: 443.57848pt x 285.54149pt.
-<img/crearTablas.png, id=210, 1154.51324pt x 552.26324pt>
+<img/crearTablas.png, id=64, 1154.51324pt x 552.26324pt>
 File: img/crearTablas.png Graphic file (type png)
 <use img/crearTablas.png>
 Package pdftex.def Info: img/crearTablas.png  used on input line 342.
@@ -972,12 +966,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
 [9]
-<img/existe.png, id=411, 343.88475pt x 233.07076pt>
+<img/existe.png, id=275, 343.88475pt x 233.07076pt>
 File: img/existe.png Graphic file (type png)
 <use img/existe.png>
 Package pdftex.def Info: img/existe.png  used on input line 621.
 (pdftex.def)             Requested size: 310.50357pt x 210.45166pt.
-<img/noexiste.png, id=412, 320.397pt x 113.223pt>
+<img/noexiste.png, id=276, 320.397pt x 113.223pt>
 File: img/noexiste.png Graphic file (type png)
 <use img/noexiste.png>
 Package pdftex.def Info: img/noexiste.png  used on input line 627.
@@ -1000,12 +994,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
 [10 <./img/existe.png> <./img/noexiste.png>]
-<img/usuario.png, id=432, 1141.866pt x 549.85425pt>
+<img/usuario.png, id=297, 1141.866pt x 549.85425pt>
 File: img/usuario.png Graphic file (type png)
 <use img/usuario.png>
 Package pdftex.def Info: img/usuario.png  used on input line 642.
 (pdftex.def)             Requested size: 443.57848pt x 213.60327pt.
-<img/crearRepo.png, id=433, 1425.82687pt x 687.31781pt>
+<img/crearRepo.png, id=298, 1425.82687pt x 687.31781pt>
 File: img/crearRepo.png Graphic file (type png)
 <use img/crearRepo.png>
 Package pdftex.def Info: img/crearRepo.png  used on input line 651.
@@ -1028,7 +1022,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
 [11 <./img/usuario.png> <./img/crearRepo.png>]
-<img/Readme.png, id=442, 678.73575pt x 483.60675pt>
+<img/Readme.png, id=310, 678.73575pt x 483.60675pt>
 File: img/Readme.png Graphic file (type png)
 <use img/Readme.png>
 Package pdftex.def Info: img/Readme.png  used on input line 674.
@@ -1051,12 +1045,12 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
 [12 <./img/Readme.png>]
-<img/commits.png, id=457, 1142.46825pt x 551.661pt>
+<img/commits.png, id=327, 1142.46825pt x 551.661pt>
 File: img/commits.png Graphic file (type png)
 <use img/commits.png>
 Package pdftex.def Info: img/commits.png  used on input line 684.
 (pdftex.def)             Requested size: 443.57848pt x 214.1873pt.
-<img/repositorio.png, id=458, 1141.866pt x 549.85425pt>
+<img/repositorio.png, id=328, 1141.866pt x 549.85425pt>
 File: img/repositorio.png Graphic file (type png)
 <use img/repositorio.png>
 Package pdftex.def Info: img/repositorio.png  used on input line 693.
@@ -1079,7 +1073,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
 [13 <./img/commits.png> <./img/repositorio.png>]
-<img/Compartir.png, id=468, 603.4545pt x 252.945pt>
+<img/Compartir.png, id=340, 603.4545pt x 252.945pt>
 File: img/Compartir.png Graphic file (type png)
 <use img/Compartir.png>
 Package pdftex.def Info: img/Compartir.png  used on input line 703.
@@ -1160,7 +1154,7 @@ Package fancyhdr Warning: \headheight is too small (30.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.51407pt}.
 
-[16] (Plantilla.aux
+[16] (InformeSQLite.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 LaTeX Info: Redefining \. on input line 13.
@@ -1170,17 +1164,24 @@ LaTeX Info: Redefining \% on input line 13.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `Plantilla.out' has not changed.
-(rerunfilecheck)             Checksum: 8521000FDA538A34C7DF8CB419834E6B;6893.
+
+
+Package rerunfilecheck Warning: File `InformeSQLite.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `InformeSQLite.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  8521000FDA538A34C7DF8CB419834E6B;6893.
  ) 
 Here is how much of TeX's memory you used:
- 18948 strings out of 474486
- 318282 string characters out of 5742811
+ 18898 strings out of 474486
+ 317430 string characters out of 5742811
  2018542 words of memory out of 5000000
- 40682 multiletter control sequences out of 15000+600000
+ 40638 multiletter control sequences out of 15000+600000
  561351 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,17n,93p,459b,2142s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,17n,93p,455b,2142s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1193,9 +1194,9 @@ C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mr7.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmti10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb>
-Output written on Plantilla.pdf (16 pages, 999073 bytes).
+Output written on InformeSQLite.pdf (16 pages, 984561 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
+ 464 PDF objects out of 1000 (max. 8388607)
  269 named destinations out of 1000 (max. 500000)
- 401 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
