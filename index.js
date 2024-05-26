@@ -27,16 +27,15 @@ conexion.connect((err) => {
     console.log('Conexion Establecida mysql')
   }
   
-  app.get('/basedata',(require, response) => {
+  app.get('/basedata',(request, response) => {
     conexion.query('SELECT * FROM movie',(err,filas) => {
       if (err) {
         console.error('Error en la consulta')
         response.status(500).json({error: 'Error en la consulta'});
-        return
       } else {
         console.log('Consulta realizada')
+        response.json(filas);
       }
     });
   });
-  conexion.end();
 });
