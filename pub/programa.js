@@ -4,7 +4,15 @@ function movies(fecha){
     year: parseInt(fecha)
   }
   console.log(data);
-  fetch(url)
+  const request = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  }
+  
+  fetch(url, request)
     .then(response => response.json())
     .then(datos => {
       console.log(datos);
