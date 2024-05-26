@@ -35,7 +35,7 @@ function movies(fecha){
         for (const key in dato){
           if(key != 'id' && key != 'Year'){
             const td = fila.insertCell();
-            td.texContent = dato[key];
+            td.textContent = dato[key];
           }
         }
       })
