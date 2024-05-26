@@ -1,4 +1,4 @@
-function (fecha){
+function movies(fecha){
   const url = 'http://localhost:3000/basedata';
   const data = {
     year: fecha
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const fecha = document.querySelector('#year');
   document.querySelector('#formulario').onsubmit = (event) => {
     event.preventDefault();
-    movies(fecha);
+    movies(fecha.value);
     return false;
   }
 });
