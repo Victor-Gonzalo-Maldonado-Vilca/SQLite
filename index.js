@@ -26,4 +26,13 @@ conexion.connect((err) => {
   } else {
     console.log('Conexion Establecida mysql')
   }
+
+  conexion.query('SELECT * FROM movie',(err,filas) => {
+    if (err) {
+      console.error('Error en la consulta')
+    } else {
+      console.log('Consulta realizada')
+    }
+  });
+  conexion.end();
 });
