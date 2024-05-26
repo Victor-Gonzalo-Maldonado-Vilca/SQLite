@@ -1,7 +1,7 @@
 function movies(fecha){
   const url = 'http://localhost:3000/basedata';
   const data = {
-    year: fecha
+    year: parseInt(fecha)
   }
   console.log(data);
 }
