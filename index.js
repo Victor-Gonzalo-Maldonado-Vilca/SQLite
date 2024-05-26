@@ -32,7 +32,7 @@ conexion.connect((err) => {
     console.log('Conexion Establecida mysql')
   }
   
-  app.get('/basedata',(request, response) => {
+  app.post('/basedata',(request, response) => {
     const fecha = request.body.year;
     console.log(fecha);
     conexion.query('SELECT * FROM movie WHERE Year = ?',[fecha],(err,filas) => {

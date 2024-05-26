@@ -22,9 +22,11 @@ function movies(fecha){
       const filaE = tabla.insertRow();
       
       for (const key in datos[0]){
-        const th = document.createElement('th');
-        th.textContent = key.toUpperCase();
-        filaE.appendChild(th);
+        if(key != 'id' && key != 'Year'){
+          const th = document.createElement('th');
+          th.textContent = key.toUpperCase();
+          filaE.appendChild(th);
+        }
       }
       contenedorTabla.appendChild(tabla);
     })
