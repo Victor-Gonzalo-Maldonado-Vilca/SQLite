@@ -18,6 +18,7 @@ function movies(fecha){
       console.log(datos);
       const contenedorTabla = document.querySelector('#table');
       const tabla = document.createElement('table');
+      tabla.id = 'tablePeliculas';
       const encabezado = tabla.createTHead();
       const filaE = tabla.insertRow();
       

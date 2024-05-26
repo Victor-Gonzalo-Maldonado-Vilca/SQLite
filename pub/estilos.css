@@ -1,0 +1,35 @@
+#tablePeliculas{
+  text-align: center;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#tablePeliculas td, #tablePeliculas th{
+  border: 1px solid black;
+}
+
+h1 {
+  color: #700000;
+}
+
+label {
+  color: #700000;
+}
+
+#year {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-left: 10px;
+}
+
+#submit {
+  color: white;
+  border: 1px solid #640000;
+  background: #7e1919;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  border: 1px solid #7e1919;
+  background: #9a4c4c;
+}
