@@ -4,9 +4,10 @@ function movies(fecha){
     year: parseInt(fecha)
   }
   console.log(data);
-  fech(url)
+  fetch(url)
     .then(response => response.json())
-    .the(data => {
+    .then(datos => {
+      console.log(datos);
       const contenedorTabla = document.querySelector('#table');
       const tabla = document.createElement('table');
       const encabezado = tabla.createTHead();
