@@ -11,7 +11,6 @@ app.use(bp.urlencoded({ extended: true }));
 //Abriendo un servidor
 app.listen(3000, () => {
 	console.log("Escuchando en: http://localhost:3000")
-
 });
 
 app.get('/', (request, response) => {
