@@ -24,6 +24,6 @@ conexion.connect((err) => {
     console.error('Error de conexion mysql ', err);
     return;
   } else {
-    console.log('Conexion Establecida')
+    console.log('Conexion Establecida mysql')
   }
 });
