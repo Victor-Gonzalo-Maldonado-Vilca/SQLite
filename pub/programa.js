@@ -17,6 +17,7 @@ function movies(fecha){
     .then(datos => {
       console.log(datos);
       const contenedorTabla = document.querySelector('#table');
+      contenedorTabla.innerHTML = '';
       
       if (datos.length > 0) {
         const tabla = document.createElement('table');
@@ -44,8 +45,10 @@ function movies(fecha){
         })
         contenedorTabla.appendChild(tabla);
       } else {
-        contenedorTabla.textContent = 'No hay Películas que mostrar';
-        tabla.classList = 'tablePeliculas';
+        const texto = document.createElement('p');
+        texto.id = 'text';
+        texto.textContent = 'No hay Películas que mostrar';
+        contenedorTabla.appendChild(texto);
       }
     })
 }

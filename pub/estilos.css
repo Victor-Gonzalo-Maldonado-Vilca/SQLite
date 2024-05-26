@@ -34,3 +34,10 @@ label {
   border: 1px solid #7e1919;
   background: #9a4c4c;
 }
+
+#text{
+  margin-top: 20px;
+  color: #7e1919;
+  font-size: 25px;
+  font-style: italic;
+}
